@@ -1,0 +1,122 @@
+
+.menu.menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /*left: auto;
+    top: auto; 
+    I need a higher z-index here because of the scroll-over effect.*/
+    z-index: 4;
+}
+
+.navbar .menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+/*.menu-link .menu-selected {
+    padding: .4em 1em 2em 1em;
+}*/
+.menu-selected {
+    background-image:url(../img/menu_selected.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    padding: .4em 1em 2.3em 1em;
+}
+.navbar .menu-selected a {
+    color: white;
+}
+.menu-list {
+    top:6.5em;
+}  
+
+.navbar a {
+    color: #FFFFFF;
+    font-size:2em;
+}
+.navbar li a:hover,
+.navbar li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+        /*padding: 0.5em;*/
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    background-image:url(../img/header.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:left bottom;
+}
+header .logo {
+    display: inline-block;
+    height: 150px;
+    position: relative;
+    z-index:5;
+    /*line-height: 150px;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    top:-10px;
+}
+header nav {
+    /*display: block;*/
+    /*float: right;*/
+    /*position:fixed;*/
+    /*right:0;*/
+    line-height:9em;
+    }
+header nav a {
+    line-height: 0px;
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header nav a:hover {
+    color: white;
+}
+header.smaller {
+    height: 75px;
+}
+header.smaller nav {
+    line-height:7em;
+}
+header.smaller .menu-list {
+    top:0;
+}
+header.smaller .logo {
+    height:75px;
+    display:block;
+    float:left;
+    top:-10px;
+}
+header.smaller nav a {
+    display: inline-block;
+    font-size: 1.7em;
+}
+

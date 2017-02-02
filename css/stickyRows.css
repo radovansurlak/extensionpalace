@@ -1,0 +1,24 @@
+.sticky-header {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    top:75px !important;
+}
+
+.sticky-header table {
+    background-color: #fff;
+}
+
+.sticky-table-for-shifting {
+    position: absolute;
+    left: 0;
+    top: 75px !important;
+}
+
+.hidden {
+    display: none !important;
+}
+.table-with-sticky-rows {
+    margin-left:auto;
+    margin-right:auto;
+}
